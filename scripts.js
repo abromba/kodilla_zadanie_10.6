@@ -1,8 +1,7 @@
-var list = document.getElementById("list");
-var add = document.getElementById("addElem");
-
-add.addEventListener("click", function() {
-    var nextNumber = list.getElementsByTagName("li").length;
-    list.innerHTML += "<li>item " + nextNumber + "</li>";
-    }
-);
+var newItem = document.createElement("li");
+var textnode = document.createTextNode("item ...");
+function mojaFunction() {
+    newItem.appendChild(textnode);
+    var list = document.getElementById("myList");
+    list.appendChild(li);
+}
